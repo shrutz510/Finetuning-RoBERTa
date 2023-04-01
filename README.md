@@ -12,7 +12,7 @@ Code Description:
 
 We start by loading the AG News dataset using PyTorch. The data is tokenized using a RoBertTokenizer. The dataset is finally split into train, test, and validation datasets with a batch size 256.
 
-2) Creating the & training the model: 
+2) Creating & training the model: 
 
 This program uses a pre-trained RoBERT Classification model with an Adam optimizer and  Cross Entropy loss function. We freeze the pre-trained RoBERTa parameters and reduce the total trainable parameters to 593668. Finally, we train the model for 3 epochs and evaluate it against the validation dataset. The model with the highest validation accuracy is saved and use to measure the accuracy of the test dataset.
 
